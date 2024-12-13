@@ -44,7 +44,7 @@ function writeResponse(res, httpCode, body) {
 }
 
 function sendInvalidURLResponse(res) {
-    return writeResponse(res, 404, "url must be in the form of /fetch/{some_url_here}");
+    return writeResponse(res, 404, "url must be in the form of /{some_url_here}");
 }
 
 function sendTooBigResponse(res) {
